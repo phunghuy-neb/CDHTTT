@@ -35,7 +35,7 @@ def main():
 
     # ── Step 1: Install dependencies ────────────────────────────
     step(1, 3, "Installing / verifying dependencies ...")
-    run([sys.executable, '-m', 'pip', 'install', '-r', 'requirements.txt', '-q',
+    run([sys.executable, '-m', 'pip', 'install', '-r', 'requirements.txt',
          '--disable-pip-version-check'])
 
     # torch needs a special CPU-only wheel URL on Windows to avoid ~2 GB CUDA download
